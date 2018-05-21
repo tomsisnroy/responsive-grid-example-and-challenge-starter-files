@@ -22,14 +22,15 @@
 }
 
 /* Clearfix */
-.row::before,
+/*.row::before, */ /*Taking this line out doesn't change anything?*/
 .row::after {
-  display: table;
-  content: '';
+   display : table;
+    content: '';
+    clear: both;  /*this command can be moved up from the next function*/
 }
 
 .row::after {
-  clear: both;
+  /*clear: both;*/  /*what does the clear command do?  Doesn't affect test line*/
 }
 
 .col-3, .col-4, .col-6, .col-12 {
@@ -60,14 +61,16 @@
 
   /* 4 columns */
   .col-4 {
+    width: 33.33%;
   }
 
   /* 6 columns */
   .col-6 {
-
+    width: 50%;
   }
 
   /* 12 columns */
   .col-12 {
+    width: 100%;
   }
 }
