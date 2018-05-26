@@ -3,7 +3,7 @@ main {
 }
 
 main .row {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /*this added a gap at the bottom of the rows*/
 }
 
 .box {
